@@ -1,19 +1,9 @@
-var MAPPINGS = [
-  { 'M': 1000 },
-  { 'D': 500 },
-  { 'C': 100 },
-  { 'L': 50},
-  { 'x': 10 },
-  { 'ix': 9 },
-  { 'v': 5 },
-  { 'iv': 4 },
-  { 'i': 1 }
-];
+var config = require('./config.js');
 
 function romanNumeral (num, mappings) {
   var romans = [];
 
-  mappings = mappings || MAPPINGS;
+  mappings = mappings || config.mappings;
 
   Array.reduce(mappings, function (n, r) {
     var key = Object.keys(r)[0];
