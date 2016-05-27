@@ -1,0 +1,14 @@
+{
+  "name": "roman",
+  "version": "1.0.0",
+  "description": "roman numeral converter",
+  "main": "index.js",
+  "keywords": [
+    "roman",
+    "numeral",
+    "converter",
+    "spendar89"
+  ],
+  "author": "Jake Sendar",
+  "license": "ISC"
+}
