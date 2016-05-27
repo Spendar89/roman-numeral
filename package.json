@@ -1,5 +1,5 @@
 {
-  "name": "roman",
+  "name": "roman-numeral",
   "version": "0.0.1",
   "description": "roman numeral converter",
   "repository" : { 
@@ -8,10 +8,12 @@
   },
   "main": "index.js",
   "keywords": [
+    "roman-numeral",
     "roman",
+    "romans",
+    "numbers",
     "numeral",
-    "converter",
-    "spendar89"
+    "converter"
   ],
   "author": "Jake Sendar",
   "license": "ISC"
