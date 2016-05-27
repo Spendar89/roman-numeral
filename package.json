@@ -1,7 +1,11 @@
 {
   "name": "roman",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "roman numeral converter",
+  "repository" : { 
+    "type" :"git",
+    "url" : "https://github.com/Spendar89/roman"
+  },
   "main": "index.js",
   "keywords": [
     "roman",
