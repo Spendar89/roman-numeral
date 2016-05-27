@@ -19,7 +19,7 @@ function romanNumeral (num, mappings) {
     var key = Object.keys(r)[0];
     var val = Object.values(r)[0];
 
-    for (let i = 0; i < Math.floor(n/val); i++) { 
+    for (var i = 0; i < Math.floor(n/val); i++) { 
       romans.push(key); 
     };
 
