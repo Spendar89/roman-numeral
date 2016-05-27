@@ -1,10 +1,10 @@
 {
   "name": "roman-numeral",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "roman numeral converter",
-  "repository" : { 
-    "type" :"git",
-    "url" : "https://github.com/Spendar89/roman"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spendar89/roman"
   },
   "main": "index.js",
   "keywords": [
