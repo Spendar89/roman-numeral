@@ -10,15 +10,17 @@ var MAPPINGS = [
   { 'i': 1 }
 ];
 
-function numToRoman (num, mappings=MAPPINGS) {
+function romanNumeral (num, mappings) {
   var romans = [];
+
+  mappings = mappings || MAPPINGS;
 
   Array.reduce(mappings, function (n, r) {
     var key = Object.keys(r)[0];
     var val = Object.values(r)[0];
 
     for (let i = 0; i < Math.floor(n/val); i++) { 
-      romans.push(key) 
+      romans.push(key); 
     };
 
     return n % val;
@@ -27,4 +29,4 @@ function numToRoman (num, mappings=MAPPINGS) {
   return romans.join('');
 };
 
-module.exports = numToRoman;
+module.exports = romanNumeral;
