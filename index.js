@@ -1,6 +1,8 @@
 var config = require('./config.js');
 
-function romanNumeral (num, mappings) {
+var romanNumeral = {};
+
+romanNumeral.convert = function (num, mappings) {
   var romans = [];
 
   mappings = mappings || config.mappings;
