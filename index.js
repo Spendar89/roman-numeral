@@ -1,24 +1,23 @@
+'use strict';
+
 var config = require('./config.js');
 
-var romanNumeral = {};
+exports.convert = function (n, mappings) {
+  var res = [],
+    mappings = mappings || config.mappings,
+    keys = Object.keys(mappings);
 
-romanNumeral.convert = function (num, mappings) {
-  var romans = [];
+  keys.forEach(function (key) {
+    var val = mappings[key],
+      times = Math.floor(n/val);
 
-  mappings = mappings || config.mappings;
-
-  Array.reduce(mappings, function (n, r) {
-    var key = Object.keys(r)[0];
-    var val = Object.values(r)[0];
-
-    for (var i = 0; i < Math.floor(n/val); i++) { 
-      romans.push(key); 
+    for (var i = 0; i < times; i++) { 
+      res.push(key); 
     };
 
-    return n % val;
-  }, num);
+    n = n % val;
+  });
 
-  return romans.join('');
+  return res.join('');
 };
 
-module.exports = romanNumeral;
