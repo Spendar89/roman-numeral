@@ -1,7 +1,7 @@
 
 # <a href='https://www.npmjs.com/package/roman-numeral'>Roman Numeral</a>
 
-Simple and straightforward number to roman numeral converter.
+Simple number to roman numeral converter. Works in both Node and browser environments. Zero external dependencies.
 
 ### Installation
 
